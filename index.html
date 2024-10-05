@@ -1,19 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primera Web</title>
 </head>
+
 <body>
-    <!--Comentarios todo nuestro proyecto debe estar comentado 
-    sino, se descontar 1 punto de la nota final -->
-    <h1>Primera página</h1>
-    <h2>Subtítulo</h2>
-    <h3>título 3</h3>
-    <h4>título 4</h4>
-    <h5>título 5</h5>
-    <h6>título 6</h6>
-    
+    <div>
+        <header>
+            <h1 style="color: red; text-align: center; font-size: 30px;">Título de la página</h1>
+            <!--Etiquetas de tipo enlace
+            Existen 3 tipos de enlace:
+            1. Enlace absoluto-> Hacemos referencia a recursos que se encuentran fuera de mi proyecto
+            2. Enlace relativo-> Este enlace me permite hacer referencia a recursos que estan dentro 
+            de mi proyecto no necesariamente en el mismo documento html
+            3. Enlace a un elemento-> hace referencia a un elemento del mismo documento donde esto trabajando
+            mediante un identificador 
+            La etiqueta que vamos a utilizar es la etiqueta <a></a>-->
+            <h2>Enlaces:</h2>
+            <ul>
+                <a href="https://youtu.be/tkFSTpvkGgs?si=3V4zrXyx_ec2pmta" target="_blank"><li>Enlace absoluto</li></a>
+                <a href="vistas/contscto/contacto.html"><li>Enlace relativo</li></a>
+                <a href="#personal"><li>Enlace a un elemento</li></a>
+
+            </ul>
+            
+        </header>
+
+
+    </div>
+
+    <section id="personal">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, aspernatur quo nulla inventore ducimus amet delectus? Aperiam vero
+             deserunt ad doloribus commodi voluptatibus, ratione dolor quaerat quis eaque. Obcaecati, facere.
+        </p>
+    </section>
+    <!--Etiqueta de imagen -->
+    <section>
+        <h2>Imágenes</h2>
+        <img src="img/imagenhtml.png" alt="Imagen html" title="Imagen Html" width="100px" height="100px">
+    </section>
+
+    <!--Tabla-->
+    <section>
+        <table border="1px solid">
+            <thead>
+                <th>Pais</th>
+                <th>Continente</th>
+                <th>Población</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ecuador</td>
+                    <td>América</td>
+                    <td>18000000</td>
+                </tr>
+                <tr>
+                    <td>Colombia</td>
+                    <td>América</td>
+                    <td>30000000</td>
+                </tr>
+
+            </tbody>
+            
+        </table>
+    </section>
+       
+
+
+
 </body>
+
 </html>
